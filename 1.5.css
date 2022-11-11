@@ -79,6 +79,7 @@ html {
 }
 
 .open-btn {
+  display: none;
   border: none;
   background: none;
   margin-top: 16px;
@@ -93,6 +94,7 @@ html {
 }
 
 .close-btn {
+  display: none;
   border: none;
   background: none;
   margin-top: 16px;
@@ -111,6 +113,12 @@ html {
 }
 
 @media (min-width: 768px) {
+  .open-btn {
+    display: block;
+  }
+  .close-btn {
+    display: block;
+  }
   .swiper {
     display: none;
   }
