@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.5</title>
+    <link rel="stylesheet" href="1.5.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <section class="manufacturers">
+        <div class="manufacturers__header">
+            <h2>Ремонт техники различных брендов</h2>
+        </div>
+        <div class="manufacturers__main">
+            <div class="manufacturers__list">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/lenovo.svg" alt="lenovo">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/samsung.svg" alt="samsung" class="samsung-img">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/apple.svg" alt="apple">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/viewsonic.svg" alt="viewsonic">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/bosch.svg" alt="bosch">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/hp.svg" alt="hp">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/acer.svg" alt="acer">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/sony.svg" alt="sony">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/hp.svg" alt="hp">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/acer.svg" alt="acer">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="manufacturers__item">
+                                <a href="#">
+                                    <img src="img/sony.svg" alt="sony">
+                                    <img src="img/go.svg" alt="go">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="manufacturers__container manufacturers__container--closed">
+
+                </div>
+            </div>
+
+            <button class="open-btn">
+                <img src="img/icon.svg" alt="">
+                Показать все
+            </button>
+            <button class="close-btn">
+                <img src="img/close_icon.svg" alt="">
+                Скрыть
+            </button>
+        </div>
+    </section>
+    <style>
+        .swiper-pagination {
+            width: 204px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            margin-right: 12px;
+            background-color: #ddd;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet:last-of-type {
+            margin-right: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #b5b6bc;
+        }
+    </style>
+    <script src="1.5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
